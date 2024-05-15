@@ -1,6 +1,137 @@
+:root{
+  --glow: #198754;
+  --bg:#212529;
+}
+
+/* Common Section */
+nav {
+  width: 100%;
+}
+/* section{
+  display: flex !important;
+  justify-content: center !important;
+  min-width: 100vh;
+  align-items: center !important;
+  min-height: 110vh !important;
+} */
+
+
+a{
+  text-decoration: none;
+  color: white;
+}
+#glow,.abo {
+  text-shadow: 2px 2px 10px var(--glow) ;
+}
+::selection{
+  background-color: #198754;
+  color: #212529;
+}
+
+
+/* Nav Bar */
+li a:hover{
+  font-weight: 700 !important;
+  transform: translate(-5px, -5px);
+  text-shadow: 1px 1px 5px ;
+  color: rgb(78, 166, 78) !important;
+  }
+  .navigation-bar{
+    backdrop-filter: blur(25px);
+  }
+
+/* First Section */
+.des{
+    font-size: 1.7rem !important;
+    font-weight: 700 !important;
+    color: var(--bg) ;
+    text-shadow: -1px -1px 0 var(--glow),
+                 1px -1px 0 var(--glow),
+                 -1px 1px 0 var(--glow),
+                 1px 1px 0 var(--glow) !important;
+}
+
+.social-media{
+  padding: 20px 20px 20px 0px;
+}
+.social-media i{
+  padding: 25px ;
+  font-size: 28px;
+}
+#my-img{
+  width: auto;
+  max-width: 200px;
+  height: auto;
+}
+
+/* Skills */
+.skill{
+  padding: 10px 5px;
+}
+.front-end h4, .back-end h4, .other-skill h4{
+  text-shadow: 2px 2px 10px var(--glow) 
+}
+.heading{
+  margin-bottom: 100px !important;
+  color: transparent;
+}
 #skill-img{
-    height: 30px;
-  }
-  #other-skill-img{
-    height: 70px;
-  }
+  height: 30px;
+}
+#other-skill-img{
+  height: 70px;
+}
+
+/* Project */
+.cards{
+  height: fit-content !important;
+}
+.card img{
+  object-fit: cover !important;
+  max-height: 200px !important;
+}
+
+/* Resume */
+.resume-img:hover{
+  opacity: 0.2;
+  transition: all .5s;
+}
+.resume-img:hover ~ .click {
+  opacity: 1;
+}
+
+.click {
+  position: relative;
+  top: -500px;
+  left: 130px;
+  opacity: 0;
+  color: #198754;
+  transition: all ease-out .4s;
+  
+}
+/* contact us */
+#contact-input-1, #contact-input-2{
+  border-radius: 10px;
+  height: 45px;
+  outline: none;
+}
+#contact-input-1::placeholder, #contact-input-2::placeholder{
+  color: #198754;
+  padding-left: 20px;
+  font-weight: 600;
+}
+#contact-input-1:focus,#contact-input-2:focus, #contact-input-3:focus{
+  border: 1px solid #198754;
+}
+
+td{
+  padding: 5px;
+}
+
+footer {
+  display: flex !important;
+  justify-content: center !important;
+  min-width: 100vh;
+  align-items: center !important;
+  min-height: 40vh !important;
+}

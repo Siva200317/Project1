@@ -6,144 +6,105 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
+    
+  <!-- Animation Link -->
+  <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+
+  <!-- Font Awesome Link -->
+  <script src="https://kit.fontawesome.com/fa698b3ee0.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-              </li>
-            </ul>
-            
-          </div>
+<body data-bs-theme="dark"  id="bdy">
+  <!-- Nav Bar -->
+  <nav class="navbar navbar-expand-lg navigation-bar  fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Portfolio</a>
+      <button id="dark-btn" class="btn me-auto fs-4 ">&#9789</button>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav ms-auto ">
+
+          <li class="nav-item">
+            <a class="nav-link fs-5" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fs-5" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fs-5" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fs-5" href="#project">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fs-5" href="#resume">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fs-5" href="#contact">Contact us</a>
+          </li>
+
+        </ul>
+        
+      </div>
+    </div>
+  </nav>
+    
+<section>
+  <div class="container">
+    
+    <div class="row mb-5">
+
+        <div class="col-12 mb-5 ">
+          <h1 class="text-center mt-3">About</h1>
+          <hr>
         </div>
-      </nav>
+    </div>
+   
+    <div class="row">
 
-
-
-
-
-
-
-      <section style="margin-top: 100px;">
-        <div class="container d-flex justify-content-center">
-            <div class="row ">
-                <div class="col-md-6">
-                    <h3>Hello! &#128075</h3>
-                    <h1   >I am Siva Sathish</h1>
-                    <p class=" h4"  >F u l l - S t a c k <span class="des" id="glow">&nbsp; D e v e l o p e r</span></p>
-
-                    <div data-aos="fade-right" data-aos-delay="2000" data-aos-duration="1000" data-aos-easing="ease-out" >
-                        <p class="fs-5 ">I am  full stack developer. Skilled in highly reponsive and mobile web application with elegant and efficient code. Certified in both front-end (F/E) and back-end (B/E) technologies. 
-                        </p>
-                        <button class="btn btn-outline-success">Hire Me</button> 
-                        <a href="./photos/Sivasathish Resume.pdf" download="">
-                        <button class="btn btn-outline-success">Download CV</button>
-                        </a>
-
-                                <div class="social-media d-flex ">
-
-                                    <div class="me-3">
-                                        <a href="https://www.instagram.com/black_baby_zera/" target="_blank">
-                                            <img src="./photos/Social media/instagram.png" alt="" height="50px">
-                                        </a>
-                                    </div>
-
-                                    <div class="me-3">
-                                        <a href="https://www.facebook.com/Rdx.Sathish.58" target="_blank">
-                                            <img src="./photos/Social media/facebook.png" height="50px" alt="">
-                                        </a>
-                                    </div>
-
-                                    <div class="me-3">
-                                        <a href="https://www.linkedin.com/in/siva-sathish-120634301?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
-                                            <img src="./photos/Social media/linkedin.png" height="50px" alt="">
-                                        </a>
-                                    </div>
-
-                                    <div class="me-3">
-                                        <a href="https://github.com/sivasathish889" target="_blank">
-                                            <img src="./photos/Social media/github.png" height="55px" alt="">
-                                        </a>
-                                    </div>
-
-                                </div>
-                    </div> 
-                </div>
-
-                <div class="col-md-6 d-flex justify-content-center">
-                    <div class="col-md-6 image d-flex justify-content-center">
-                        <img src="photos//my image/my.jpg" style="max-height: 25rem;">
-                    </div>
-                </div>
-            </div>
-        </div>
-      </section>
-
-
-
-
-
-      <!-- about -->
-      <section>
-        <div class="container ">
-            <div class="row mb-5">
-
-                <div class="col-12 mb-5 ">
-                  <h1 class="text-center mt-3">About</h1>
-                  <hr>
-                </div>
+          <div class="col-md-6">
+              <div class="d-flex justify-content-center">
+                <img src="photos/my image/Screenshot 2024-03-05 153957.png"  width="350px" height="550px">
+              </div>
             </div>
 
-            <div class="row ">
-                <div class="col-md-6">
-                    <div class="d-flex justify-content-center">
-                        <img src="photos/my image/Screenshot 2024-03-05 153957.png"  height="550px">
-                      </div>
-                    </div>
-                    
-                    <div class="col-md-6">
-                        <div class="text-center ">
-                            
-                            <div data-aos="fade-left" data-aos-delay="500" data-aos-duration="700" data-aos-easing="ease-out">
-                                <h1 class="mb-5 mt-5">Hi, I am full Stack developer</h1>
-                            </div>
-                            
-                            <p data-aos="fade-left" data-aos-delay="1000" data-aos-duration="800" data-aos-easing="ease-out" class="mb-4 lh-lg"> My name is Siva sathish. I am 20 years old. I have completed my Collage from IRT polytechnic Collage.  I’ve honed my skills in <span class="abo fs-6 font-weight-bold text-uppercase ">html5, css3, javascript, bootstrap5, python, django, mysql, mongodb, rest-api.</span> Seeking to further improve My full stack skills as the future full stack developer.  </p>
-                            
-                            <div class="row mt-5" data-aos="fade-left" data-aos-delay="1500" data-aos-duration="1000" data-aos-easing="ease-out">
-                                
-                                <div class="col-6">
-                                    <div class="mb-2">Name : Siva Sathish</div>
-                                    <div>Birth Day : 22/10/2004</div>
-                                </div>
-                                
-                                <div class="col-6">
-                                    <div class="mb-2">Location : Tirunelveli</div>
-                                    <div>Phone :9342297446</div>
-                                </div>
-                                
-                            </div>
-                            
-                        </div>
-                    </div>
+            <div class="col-md-6 d-flex align-items-center">
+              <div class="text-center ">
+
+                <div data-aos="fade-left" data-aos-delay="500" data-aos-duration="700" data-aos-easing="ease-out">
+                  <h1 class="mb-5 mt-5">Hi, I am full Stack developer</h1>
                 </div>
+
+                <p data-aos="fade-left" data-aos-delay="1000" data-aos-duration="800" data-aos-easing="ease-out" class="mb-4 lh-lg"> My name is Siva sathish. I am 20 years old. I have completed my Collage from IRT polytechnic Collage.  I’ve honed my skills in <span class="abo fs-6 font-weight-bold text-uppercase ">html5, css3, javascript, bootstrap5, python, django, mysql, mongodb, rest-api.</span> Seeking to further improve My full stack skills as the future full stack developer.  </p>
+
+                    <div class="row mt-5" data-aos="fade-left" data-aos-delay="1500" data-aos-duration="1000" data-aos-easing="ease-out">
+
+                          <div class="col-6">
+                            <div class="mb-2">Name : Siva Sathish</div>
+                            <div>Birth Day : 22/10/2004</div>
+                          </div>
+
+                          <div class="col-6">
+                            <div class="mb-2">Location : Tirunelveli</div>
+                            <div>Phone :9342297446</div>
+                          </div>
+
+                    </div>
+
+              </div>
+
             </div>
-        </div>
-      </section>
+      </div>
+  </div>
+</section>
+
+
+
+
+
 
 
 
@@ -295,19 +256,19 @@
               
                     <div class="row mb-2 text-center">
                       
-                     <!-- <div class="col-md-2">
+                      <div class="col-md-2">
                         <div class="container skill" data-aos="fade-right" data-aos-delay="2000" data-aos-duration="1000" data-aos-easing="ease-out">
                           <img src="./photos/skills/pngaaa.com-7010933.png" id="other-skill-img" alt="">
                           <h5 class="ms-2 mt-2">Responsive Webdesign</h5>
                         </div>
-                      </div> -->
+                      </div>
               
-                      <!-- <div class="col-md-2">
+                       <div class="col-md-2">
                         <div class="container skill" data-aos="fade-right" data-aos-delay="1500" data-aos-duration="1000" data-aos-easing="ease-out">
                           <img src="./photos/skills/amazon-web-services.png" id="other-skill-img" alt="">
                           <h5 class="ms-2 mt-2">AWS</h5>
                         </div>
-                      </div> -->
+                      </div> 
               
                       <div class="col-md-3 ">
                         <div class="container skill" data-aos="fade-right" data-aos-delay="1200" data-aos-duration="1000" data-aos-easing="ease-out">
@@ -340,10 +301,254 @@
                     </div>
                   </div>
             </div>
+      </section> 
+
+
+      <section>
+        <div class="container">
+
+
+          <div class="row  text-center">
+            <div class="col-12 mb-5">
+              <h1 class="text-center mb-5">Projects</h1>
+              <hr>
+            </div>
+            </div>
+
+
+            <div class="row">
+              <!-- First project -->
+              <div class="col-md-4 cards d-flex justify-content-center mb-3">
+                <div class="card ">
+                  <img class="card-img-top" src="photos/project/Screenshot 2024-04-23 144711.png" alt="">
+                  <div class="card-body">
+                    <h6>Student Management System</h6>
+                    <a href="https://github.com/sivasathish889/Student-Management" target="_blank" class="btn btn-success">View on GitHub</a>
+                  </div>
+                </div>
+              </div>
+            
+              <!-- Second Project -->
+              <div class="col-md-4 cards d-flex justify-content-center mb-3">
+                <div class="card">
+                  <img class="card-img-top" src="photos/project/imageupload.png" alt="">
+                  <div class="card-body">
+                    <h6>Image Uploader</h6>
+                    <a href="https://github.com/sivasathish889/Django-Imageuploader" target="_blank" class="btn btn-success">View on GitHub</a>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Third Project -->
+              <div class="col-md-4 cards d-flex justify-content-center mb-3">
+                <div class="card ">
+                  <img class="card-img-top" src="photos/project/Screenshot 2024-04-23 142731.png" alt="">
+                  <div class="card-body">
+                    <h6>E-Commerse Website</h6>
+                    <a href="https://github.com/sivasathish889/E-commerse-website" target="_blank" class="btn btn-success">View on GitHub</a>
+                  </div>
+                </div>
+              </div>
+            
+              <!-- Forth Project -->
+              <div class="col-md-4 cards d-flex justify-content-center mb-3">
+                <div class="card" >
+                  <img class="card-img-top" src="photos/project/Screenshot 2024-04-23 145646.png" alt="">
+                  <div class="card-body">
+                    <h6>Django CRUD operation</h6>
+                    <a href="https://github.com/sivasathish889/Django-CRUD" target="_blank" class="btn btn-success">View on GitHub</a>
+                  </div>
+                </div>
+              </div>
+            
+              <!-- Fifth Project -->
+              <div class="col-md-4 cards d-flex justify-content-center mb-3">
+                <div class="card ">
+                  <img class="card-img-top" src="photos/project/clock.png" alt="">
+                  <div class="card-body">
+                    <h6>Clock</h6>
+                    <a href="https://github.com/sivasathish889/Clock-project" target="_blank" class="btn btn-success">View on GitHub</a>
+                  </div>
+                </div>
+              </div>
+      
+              <!-- Sixth -->
+              <div class="col-md-4 cards d-flex justify-content-center mb-3">
+                <div class="card ">
+                  <img class="card-img-top" src="photos/project/e-mail.png" alt="">
+                  <div class="card-body">
+                    <h6>Clock</h6>
+                    <a href="https://github.com/sivasathish889/E-mail-Send-Form" target="_blank" class="btn btn-success">View on GitHub</a>
+                  </div>
+                </div>
+              </div>
+      
+            </div>
+        </div>
       </section>
 
 
+      <!-- resume -->
+      <section class="flex-column" id="resume">
+        <div class="row container">
+          <div class="col-md-12 mt-5">
+            <h1 class="text-center mt-5"> Resume </h1>
+            <hr>
+          </div>
+  
+          <div  class="d-flex justify-content-center mt-5">
+            <a href="./photos/Sivasathish Resume.pdf"  download="" > 
+              <img src="./photos/siva resume.jpg" class="resume-img"  alt="" id="my-img">
+              <h1 class="click abo">Click here download</h1>
+            </a>
+          </div>
+  
+        </div>
+  
+    </section>
 
+
+           <!-- Contact Us -->
+
+  <section id="contact">
+    <div class="container ">
+
+      <div class="row">
+        <div class="col-md-12 mb-5">
+          <h1 class="text-center mt-5"> Conatct Us </h1>
+          <hr>
+        </div>
+      </div>
+
+      <div class="d-flex row">
+
+        <div class="col-md-6 flex-column ">
+          <h3 class="mb-5 display-6 text-center">Get in Touch</h3>
+
+            <form action="https://api.web3forms.com/submit" method="POST" class="content">
+
+              <div class="mb-3 d-flex justify-content-center">
+                <input type="hidden" name="access_key" value="84dbf02a-00bb-4411-9e0c-d41ba6c7b594">
+                <input type="text"  name="name" id="contact-input-1" class="w-75 " placeholder="Enter Your Name">
+              </div>
+
+              <div class="mb-3 d-flex justify-content-center">
+                <input type="email" name="email" id="contact-input-2" class="w-75" placeholder="Enter Your Mail">
+              </div>
+
+              <div class="mb-3 d-flex justify-content-center">
+                <textarea name="message" id="contact-input-3" cols="28" rows="8" class="w-75" placeholder="Description"></textarea>
+              </div>
+
+              <div class="d-flex justify-content-center">
+                <button type="submit" class="btn btn-success text-center w-25">Send <i class="fa-solid fa-arrow-right"></i></button>
+              </div>
+
+            </form>
+        </div>
+
+        <div class="col-md-6">
+            <img src="./photos/favpng_vector-graphics-cartoon-illustration-clip-art-character.png" class="w-100 h-75" alt="">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+        <!-- Footer -->
+        <footer>
+
+          <div class="row ">
+        
+            <div class="col-md-6 text-center">
+        
+              <div class="mb-4 ">
+                <i class="fa-brands fa-telegram fs-1 mb-2" ></i>
+                <div class="mb-5">What Someone Inbox Love ?</div>
+              </div>
+        
+              <div class="mail-box">
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control" placeholder="Your Email">
+                  <div class="input-group-append">
+                    <button class="btn btn-secondary">Send Mail</button>
+                  </div>
+                </div>
+              </div>
+        
+            </div>
+        
+            <div class="col-md-3">
+                
+                <div class="footer-media text-center">
+        
+                  <div class="d-flex justify-content-center">
+                    <div class="me-3 mb-4">
+                      <a href="https://www.instagram.com/black_baby_zera/" target="_blank">
+                        <i class="fa-brands fa-instagram fs-3"></i>
+                      </a>
+                    </div>
+        
+                    <div class="me-3">
+                      <a href="https://www.facebook.com/Rdx.Sathish.58" target="_blank">
+                        <i class="fa-brands fa-facebook fs-3"></i>
+                      </a>
+                    </div>
+        
+                    <div class="me-3">
+                      <a href="https://www.linkedin.com/in/siva-sathish-120634301?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                        <i class="fa-brands fa-linkedin-in fs-3"></i>
+                      </a>
+                    </div>
+        
+                    <div class="me-3">
+                      <a href="https://github.com/sivasathish889" target="_blank">
+                        <i class="fa-brands fa-github fs-3"></i>
+                      </a>
+                    </div>
+                  </div>
+                  
+                  <div class="copyright fs-5 ">
+                    &copy; <span id="copyrights-year">  </span> Siva Sathish
+                  </div>
+                  
+                </div>
+                  
+            </div>
+        
+            <div class="col-md-3 d-flex flex-column text-center">
+              <div>
+                <a href=""  class="fs-5 mb-2"> Home </a>
+              </div>
+              <div>
+                <a href="#about" class="fs-5 mb-2"> about </a>
+              </div>
+              <div>
+                <a href="#skills" class="fs-5 mb-2"> skills </a>
+              </div>
+              <div>
+                <a href="#project" class="fs-5 mb-2"> projects </a>
+              </div>
+              <div>
+                <a href="#contact" class="fs-5 mb-2"> Conatct us </a>
+              </div>
+            </div>
+          </div>
+          </footer>
+
+<!-- E-mail send Link -->
+<script src="https://web3forms.com/client/script.js" async defer></script>
+
+<!-- Javascript Link -->
+<script src="index.js"></script>
+
+<!-- Bootstrap js Link -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<!-- Animation js Link -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script> AOS.init(); </script>
+
 </body>
 </html>
