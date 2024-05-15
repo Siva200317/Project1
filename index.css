@@ -14,11 +14,22 @@ section{
   align-items: center !important;
   min-height: 110vh !important;
 }
+#bdy{
+  overflow-x: hidden;
+}
 
+@media screen and (max-width:768px) {
+  .first-section {
+    margin-top: 100px;
+  }
+}
 
 a{
   text-decoration: none;
   color: white;
+}
+li{
+  list-style: none;
 }
 #glow,.abo {
   text-shadow: 2px 2px 10px var(--glow) ;
@@ -58,16 +69,22 @@ li a:hover{
   padding: 25px ;
   font-size: 28px;
 }
-#my-img{
+#my-img1{
   width: 100%;
   height: auto;
-  max-height: 350px;
+  max-height: 450px;
+  max-width: 70%;
+}
+#my-img2{
+  width: 100%;
+  height: auto;
+  max-height: 450px;
   max-width: 50%;
 }
-#resume-img{
+#my-img3{
   width: 100%;
   height: auto;
-  max-height: 800px;
+  max-height: 450px;
   max-width: 50%;
 }
 
@@ -98,15 +115,6 @@ li a:hover{
   max-height: 200px !important;
 }
 
-/* Resume */
-.resume-img:hover{
-  opacity: 0.2;
-  transition: all .5s;
-}
-.resume-img:hover ~ .click {
-  opacity: 1;
-}
-
 /* contact us */
 #contact-input-1, #contact-input-2{
   border-radius: 10px;
@@ -129,7 +137,6 @@ td{
 footer {
   display: flex !important;
   justify-content: center !important;
-  min-width: 100vh;
   align-items: center !important;
-  min-height: 40vh !important;
+  min-height: 30vh !important;
 }
