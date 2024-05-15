@@ -72,13 +72,13 @@ li a:hover{
 #my-img1{
   width: 100%;
   height: auto;
-  max-height: 450px;
+  max-height: 500px;
   max-width: 70%;
 }
 #my-img2{
   width: 100%;
   height: auto;
-  max-height: 450px;
+  max-height: 500px;
   max-width: 50%;
 }
 #my-img3{
@@ -140,6 +140,7 @@ td{
 footer {
   display: flex !important;
   justify-content: center !important;
+  min-width: 100vh;
   align-items: center !important;
   min-height: 30vh !important;
 }
