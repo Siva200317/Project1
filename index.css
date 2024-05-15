@@ -7,13 +7,13 @@
 nav {
   width: 100%;
 }
-/* section{
+section{
   display: flex !important;
   justify-content: center !important;
   min-width: 100vh;
   align-items: center !important;
   min-height: 110vh !important;
-} */
+}
 
 
 a{
@@ -59,9 +59,16 @@ li a:hover{
   font-size: 28px;
 }
 #my-img{
-  width: auto;
-  max-width: 200px;
+  width: 100%;
   height: auto;
+  max-height: 350px;
+  max-width: 50%;
+}
+#resume-img{
+  width: 100%;
+  height: auto;
+  max-height: 800px;
+  max-width: 50%;
 }
 
 /* Skills */
@@ -100,15 +107,6 @@ li a:hover{
   opacity: 1;
 }
 
-.click {
-  position: relative;
-  top: -500px;
-  left: 130px;
-  opacity: 0;
-  color: #198754;
-  transition: all ease-out .4s;
-  
-}
 /* contact us */
 #contact-input-1, #contact-input-2{
   border-radius: 10px;
