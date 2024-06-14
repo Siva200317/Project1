@@ -79,13 +79,13 @@ li a:hover{
   width: 100%;
   height: auto;
   max-height: 500px;
-  max-width: 80%;
+  max-width: 60%;
 }
 #my-img2{
   width: 100%;
   height: auto;
   max-height: 500px;
-  max-width: 50%;
+  max-width: 80%;
 }
 #my-img3{
   width: 100%;
@@ -155,19 +155,16 @@ footer {
   backdrop-filter: blur(20px);
   border-radius: 10px;
   background-color: rgba(239, 231, 231, 0.06);
-  color: white;
 }
 #serv2{
   backdrop-filter: blur(20px);
   border-radius: 10px;
   background-color: rgba(35, 144, 247, 0.06);
-  color: white;
 }
 #serv3{
   backdrop-filter: blur(50px);
   border-radius: 10px;
   background-color: rgba(15, 203, 47, 0.06);
-  color: white;
 }
 #serv2:hover{
   box-shadow: 5px 3px 10px 0px skyblue,
@@ -184,6 +181,10 @@ footer {
 #serv1 img, #serv2 img, #serv3 img{
   width: 100%;
   height: auto;
-  max-height: 100px;
+  max-height: 200px;
   max-width: 50%;
 }
+/* .outer{
+  background: url(./photos/5651999.jpg) no-repeat;
+  background-size: cover;
+} */
