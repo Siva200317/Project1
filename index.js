@@ -17,41 +17,54 @@ let date = new Date
 let year = document.getElementById("copyrights-year")
 year.innerHTML = date.getFullYear()
 
+// navbar gsap
+var navTL = gsap.timeline()
+navTL.from(".brand",{
+  y:-20,
+  delay : 0.5,
+  duration : 1,
+  opacity: 0,
+})
+
+navTL.from(".nav-item a",{
+  y:20,
+  duration : 0.5,
+  opacity : 0,
+  stagger : 0.5
+})
+
+gsap.from("#dark-btn",{
+  y:-20,
+  delay : 0.5,
+  duration : 1,
+  opacity: 0,
+})
 
 
-// gsap.from(".first-section h3", 1, {
-//   x : -600
-// })
-// gsap.from(".first-section h1", 2, {
-//   x : -600,
-//   delay : .7
-// })
-// gsap.from(".first-section .h4", 2.4, {
-//   x : -600,
-//   delay : 1.6
-// })
-// gsap.from("#my-img1", 2, {
-//   x : 600,
-//   duration : 2
-// })
-
-// gsap.from("#navbarText ul li ", .6, {
-//   y :-250,
-//   stagger : .6
-// })
-// gsap.from("#linkedin", .4, {
-//   scale : 0,
-//   opacity : 0
-// })
-// gsap.from("#github", .8, {
-//   scale : 0,
-//   opacity : 0
-// })
-// gsap.from("#insta", 1.2, {
-//   scale : 0,
-//   opacity : 0
-// })
-// gsap.from("#facebook", 1.6, {
-//   scale : 0,
-//   opacity : 0
-// })
+// main page gsap
+let mainTL = gsap.timeline()
+mainTL.from(".first-section .left-content h3",{
+  x:-40,
+  opacity : 0,
+  delay : 0.5,
+  duration :0.8
+})
+mainTL.from(".first-section .left-content h1",{
+  x:-40,
+  opacity : 0,
+  duration :0.8
+})
+mainTL.from(".first-section .left-content p",{
+  x:-40,
+  opacity : 0,
+  duration :0.8
+})
+mainTL.from(".first-section .left-content button",{
+  scale : 1,
+  opacity : 0,
+  duration :1
+})
+mainTL.from(".first-section #my-img1",{
+  opacity : 0,
+  duration :1
+})
