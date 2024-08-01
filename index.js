@@ -68,3 +68,43 @@ mainTL.from(".first-section #my-img1",{
   opacity : 0,
   duration :1
 })
+
+// about page gsap
+
+var aboutTL = gsap.timeline()
+
+aboutTL.from("span .abo",{
+  scale : 1,
+  duration :1,
+  delay : 1,
+  scrollTrigger : {
+    trigger : ".abo",
+
+  }
+})
+
+// skill page gsap
+// var skillTL = gsap.timeline()
+gsap.from(".skill-right",{
+  opacity : 0,
+  duration :0.8,
+  x:40,
+  stagger : 1,  
+  scrollTrigger:{
+    trigger:".skill-right",
+    scroller:"#skills",
+    markers:true,
+    start:"top 50%",
+    end:"top 20%",
+    scrub:1
+  }
+})
+
+gsap.from(".skill-left",{
+  x:-40,
+  opacity : 0,
+  duration :0.8,
+  stagger : 1,
+  scrollTrigger : ".skill-left"
+})
+

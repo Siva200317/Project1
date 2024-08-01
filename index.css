@@ -2,6 +2,9 @@
   --glow: #2a5c44;
   --bg:#212529;
 }
+body{
+cursor: url(https://ani.cursors-4u.net/cursors/cur-13/cur1161.ani), url(https://ani.cursors-4u.net/cursors/cur-13/cur1161.png), auto !important;
+}
 
 /* Common Section */
 nav {
@@ -18,9 +21,6 @@ section{
 }
 #bdy{
   overflow-x: hidden;
-  /* background-image: url(./photos/5651999.jpg);
-  background-repeat: no-repeat;
-  /* background-size: cover; */
  } 
 
 @media screen and (max-width:768px) {
@@ -104,7 +104,7 @@ li a:hover{
 }
 
 /* Skills */
-.skill{
+.skill-left, .skill-right{
   padding: 10px 5px;
 }
 .front-end h4, .back-end h4, .other-skill h4{
