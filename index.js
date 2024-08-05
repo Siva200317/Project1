@@ -92,27 +92,27 @@ aboutTL.from("span .abo",{
 })
 
 // skill page gsap
-// var skillTL = gsap.timeline()
-// gsap.from(".skill-right",{
-//   opacity : 0,
-//   duration :0.8,
-//   x:40,
-//   stagger : 1,  
-//   scrollTrigger:{
-//     trigger:".skill-right",
-//     scroller:"#skills",
-//     markers:true,
-//     start:"top 50%",
-//     end:"top 20%",
-//     scrub:1
-//   }
-// })
+var skillTL = gsap.timeline()
+gsap.from(".skill-right",{
+  opacity : 0,
+  duration :0.8,
+  x:40,
+  stagger : 1,  
+  scrollTrigger:{
+    trigger:".skill-right",
+    scroller:"#skills",
+    markers:true,
+    start:"top 50%",
+    end:"top 20%",
+    scrub:1
+  }
+})
 
-// gsap.from(".skill-left",{
-//   x:-40,
-//   opacity : 0,
-//   duration :0.8,
-//   stagger : 1,
-//   scrollTrigger : ".skill-left"
-// })
+gsap.from(".skill-left",{
+  x:-40,
+  opacity : 0,
+  duration :0.8,
+  stagger : 1,
+  scrollTrigger : ".skill-left"
+})
 
