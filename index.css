@@ -74,7 +74,7 @@ li a:hover{
   padding: 20px 20px 20px 0px;
 }
 .social-media i{
-  padding: 25px ;
+  padding: 25px;
   font-size: 28px;
 }
 #my-img1{
@@ -159,11 +159,12 @@ footer {
   align-items: center !important;
   min-height: 30vh !important;
 }
-
+/* services */
 #serv1{
   backdrop-filter: blur(20px);
   border-radius: 10px;
   background-color: rgba(239, 231, 231, 0.06);
+  position: relative;
 }
 #serv2{
   backdrop-filter: blur(20px);
@@ -193,6 +194,8 @@ footer {
   max-height: 200px;
   max-width: 50%;
 }
+
+
 /* .outer{
   background: url(./photos/5651999.jpg) no-repeat;
   background-size: cover;

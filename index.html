@@ -10,10 +10,15 @@
     <!-- Css Link -->
     <link rel="stylesheet" href="index.css">
 
+    <!-- AOS library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- favicon -->
     <link rel="shortcut icon" href="./photos/favicon.png" type="image/x-icon">
+
   <!-- Font Awesome Link -->
   <script src="https://kit.fontawesome.com/fa698b3ee0.js" crossorigin="anonymous"></script>
+
 </head>
 
 
@@ -62,7 +67,7 @@
   
 
 <!-- Main Page -->
-  <section class="first-section">
+  <section class="first-section" id="home">
     <div class="container  d-flex justify-content-center">
         <div class="row ">
             <div class="col-md-6 mt-5 left-content">
@@ -82,32 +87,32 @@
 
                                 <div class="me-3" id="linkedin">
                                   <a href="https://www.linkedin.com/in/siva-sathish-120634301?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
-                                      <img src="./photos/Social media/linkedin.png" height="50px" alt="">
+                                      <img src="./Social media/linkedin.png" height="50px" alt="">
                                   </a>
                               </div>
 
                                 <div class="me-3" id="github">
                                     <a href="https://github.com/sivasathish889" target="_blank">
-                                        <img src="./photos/Social media/github.png" height="55px" alt="">
+                                        <img src="./Social media/github.png" height="55px" alt="">
                                     </a>
                                 </div>
 
                                 <div class="me-3" id="insta">
                                     <a href="https://www.instagram.com/black_baby_zera/" target="_blank">
-                                        <img src="./photos/Social media/instagram.png" alt="" height="50px">
+                                        <img src="./Social media/instagram.png" alt="" height="50px">
                                     </a>
                                 </div>
 
                                 <div class="me-3" id="facebook">
                                     <a href="https://www.facebook.com/Rdx.Sathish.58" target="_blank">
-                                        <img src="./photos/Social media/facebook.png" height="50px" alt="">
+                                        <img src="./Social media/facebook.png" height="50px" alt="">
                                     </a>
                                 </div>
 
                                 
 
+                              </div> 
                             </div>
-                </div> 
             </div>
 
             <div class="col-md-6  d-flex justify-content-center" >
@@ -125,7 +130,7 @@
     <div class="row mb-5">
 
         <div class="col-12 mb-5 ">
-          <h1 class="text-center mt-3"> <hr>About <hr></h1>
+          <h1 class="text-center mt-3"  data-aos="zoom-out-up" data-aos-duration="1500"> <hr>About <hr></h1>
         </div>
     </div>
    
@@ -141,7 +146,7 @@
               <div class="text-center ">
 
                 <div >
-                  <h1 class="mb-5 mt-5">Hi, I am full Stack developer</h1>
+                  <h1 class="mb-5 mt-5">Hi, I am <span id="abo-skill">Full Stack developer</span></h1>
                 </div>
 
                 <p class="mb-4 lh-lg"> My name is Siva sathish. I am 20 years old. I have completed my graduate from IRT polytechnic Collage.  I’ve honed my skills in <span class="abo fs-5 font-weight-bold text-uppercase ">html5, css3, javascript, bootstrap5, node.js, express.js, python, django, redis, mysql, mongodb, mongoose, rest-api.</span> Seeking to further improve My full stack skills as the future full stack developer.  </p>
@@ -173,7 +178,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                  <h1 class="text-center my-3"> <hr> Skills <hr></h1>
+                  <h1 class="text-center my-3" data-aos="zoom-out-up" data-aos-duration="1500"> <hr> Skills <hr></h1>
                 </div>
               </div>
               <!-- Front-end -->
@@ -184,7 +189,7 @@
                     <div class="row ">
               
                         <div class="col-md-6"  >
-                          <div class="container skill-left " >
+                          <div class="container skill-left " data-aos="fade-down-right" data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom" >
                                 <h6> 
                                   <img src="./photos/skills/html (1).png" id="skill-img" class="mb-1" alt="html pic"> 
                                   HTML-5
@@ -197,7 +202,7 @@
               
                         
                         <div class="col-md-6 ">
-                          <div class="container skill-right">
+                          <div class="container skill-right"  data-aos="fade-down-left" data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom">
                                 <h6>
                                   <img src="./photos/skills/css.png" id="skill-img" alt="css image">
                                   CSS-3
@@ -212,7 +217,7 @@
                       <div class="row ">
               
                           <div class="col-md-6">
-                            <div class="container skill-left" >
+                            <div class="container skill-left"  data-aos="fade-down-right" data-aos-duration="1400" data-aos-anchor-placement="bottom-bottom">
                                 <h6>
                                   <img src="./photos/skills/javascript.png" id="skill-img" alt="javascript image">
                                   JavaScript
@@ -224,7 +229,7 @@
                           </div>
                 
                           <div class="col-md-6 ">
-                            <div class="container skill-right">
+                            <div class="container skill-right"  data-aos="fade-down-left" data-aos-duration="1400" data-aos-anchor-placement="bottom-bottom">
                                   <h6>
                                     <img src="./photos/skills/bootstrap-framework-logo.png" id="skill-img" alt="bootstrap image">
                                     Bootsrap
@@ -239,7 +244,7 @@
                         <div class="row ">
               
                           <div class="col-md-6">
-                            <div class="container skill-left" >
+                            <div class="container skill-left"  data-aos="fade-down-right" data-aos-duration="1800" data-aos-anchor-placement="bottom-bottom">
                                 <h6>
                                 <img src="./photos/skills/react (1).png" id="skill-img" alt="react-image">
                                 React</h6>
@@ -250,7 +255,7 @@
                           </div>
 
                           <div class="col-md-6">
-                            <div class="container skill-right" >
+                            <div class="container skill-right"  data-aos="fade-down-left" data-aos-duration="1800" data-aos-anchor-placement="bottom-bottom">
                                 <h6>
                                 <img src="./photos/skills/icons8-redux-48.png" id="skill-img" alt="react-image">
                                 Redux-Toolkit</h6>
@@ -271,7 +276,7 @@
                     <div class="row ">
               
                         <div class="col-md-6">
-                          <div class="container skill-left">
+                          <div class="container skill-left" data-aos="fade-down-right" data-aos-duration="2200" data-aos-anchor-placement="bottom-bottom">
                               <h6>
                                 <img src="./photos/skills/python.png" id="skill-img" alt="python image">
                                 Python</h6>
@@ -282,7 +287,7 @@
                         </div>
               
                         <div class="col-md-6 ">
-                          <div class="container skill-right" >
+                          <div class="container skill-right" data-aos="fade-down-left" data-aos-duration="2200" data-aos-anchor-placement="bottom-bottom">
                                 <h6>
                                   <img src="./photos/skills/django.Default" id="skill-img" alt="">
                                   Django</h6>
@@ -296,7 +301,7 @@
                     <div class="row ">
               
                       <div class="col-md-6">
-                        <div class="container skill-left">
+                        <div class="container skill-left" data-aos="fade-down-right" data-aos-duration="2600" data-aos-anchor-placement="bottom-bottom">
                             <h6>
                               <img src="./photos/skills/nodejs.png" id="skill-img" alt="python image">
                               Node.js</h6>
@@ -307,7 +312,7 @@
                       </div>
             
                       <div class="col-md-6 ">
-                        <div class="container skill-right" >
+                        <div class="container skill-right"data-aos="fade-down-left" data-aos-duration="2600" data-aos-anchor-placement="bottom-bottom" >
                               <h6>
                                 <img src="./photos/skills/expressjs_logo.png" id="skill-img" alt="">
                                 Express.js</h6>
@@ -321,7 +326,7 @@
                       <div class="row ">
               
                           <div class="col-md-6">
-                            <div class="container skill-left">
+                            <div class="container skill-left" data-aos="fade-down-right" data-aos-duration="3000" data-aos-anchor-placement="bottom-bottom">
                                 <h6>
                                   <img src="./photos/skills/mysql.png" id="skill-img"  alt="">
                                   My SQL</h6>
@@ -332,7 +337,7 @@
                           </div>
                 
                           <div class="col-md-6 ">
-                            <div class="container skill-right" >
+                            <div class="container skill-right" data-aos="fade-down-left" data-aos-duration="3000" data-aos-anchor-placement="bottom-bottom" >
                                   <h6>
                                     <img src="./photos/skills/mongo-db.png" id="skill-img"  alt="">
                                     Mango DB</h6>
@@ -401,7 +406,7 @@
 
         <div class="row  text-center">
           <div class="col-12 mb-2">
-            <h1 class="text-center mb-5"> <hr> Projects <hr></h1>
+            <h1 class="text-center mb-5"  data-aos="zoom-out-up" data-aos-duration="1500"> <hr> Projects <hr></h1>
           </div>
           </div>
 
@@ -487,16 +492,18 @@
 
       <div class="row  text-center">
         <div class="col-12 mb-5">
-          <h1 class="text-center mb-5"> <hr> Services <hr></h1>
+          <h1 class="text-center mb-5"  data-aos="zoom-out-up" data-aos-duration="1500"> <hr> Services <hr></h1>
         </div>
       </div>
 
         <div class="outer p-5">
           <div class="row text-center d-flex justify-content-around mt-3 ">
 
-            <div class="col-md-4 p-3 mb-3 " id="serv1" style="width: 400px;" >
+            <div class="col-md-4 p-3 mb-3" id="serv1" style="width: 400px;" >
+              <span></span>
               <h5 class="bg-success p-3">Front-end developemnet</h5>
               <img src="./photos/services/pngfind.com-website-development-png-248816.png" alt="front-end" height="100px"  class="mt-4">
+              
               <article class="mt-5">Creating enterprise-class websites with consistent branding using CSS, JavaScript, and HTML. Building complex software, including web browsers and mobile app interfaces, using ReactJS. They specialize in legacy front-end development services.
               </article>
             </div>
@@ -526,7 +533,7 @@
 
       <div class="row">
         <div class="col-md-12 mb-5">
-          <h1 class="text-center mt-5"> <hr> Conatct Us <hr> </h1>
+          <h1 class="text-center mt-5"  data-aos="zoom-out-up" data-aos-duration="1500"> <hr> Conatct Us <hr> </h1>
         </div>
       </div>
 
@@ -632,16 +639,16 @@
         <div class="col-md-4 d-flex flex-column lh-lg justify-content-center text-center">
           <ul>
             <li>
-              <a href=""  class=" mb-2 "> Home </a>
+              <a href="#home"  class=" mb-2 "> Home </a>
             </li>
             <li>
-              <a href="#about" class=" mb-2"> about </a>
+              <a href="#about" class=" mb-2"> About </a>
             </li>
             <li>
-              <a href="#skills" class=" mb-2"> skills </a>
+              <a href="#skills" class=" mb-2"> Skills </a>
             </li>
             <li>
-              <a href="#project" class=" mb-2"> projects </a>
+              <a href="#project" class=" mb-2"> Projects </a>
             </li>
             <li>
               <a href="#contact" class=" mb-2"> Conatct us </a>
@@ -660,6 +667,13 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js" integrity="sha512-1PKqXBz2ju2JcAerHKL0ldg0PT/1vr3LghYAtc59+9xy8e19QEtaNUyt1gprouyWnpOPqNJjL4gXMRMEpHYyLQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- aos -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+  AOS.init();
+</script>
 
 <!-- Javascript Link -->
 <script src="index.js"></script>
