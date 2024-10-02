@@ -80,17 +80,17 @@ gsap.from(".first-section #my-img1",{
 
 
 // // about page gsap
-gsap.registerPlugin(ScrollTrigger) 
-gsap.from(".role",{
-  scrollTrigger : {
-    trigger : ".role",
-  },
-  x:100,
-  opacity :0,
-  scale : 1,
-  duration :2,
-  delay : 1,
-})
+// gsap.registerPlugin(ScrollTrigger) 
+// gsap.from(".role",{
+//   scrollTrigger : {
+//     trigger : ".role",
+//   },
+//   x:100,
+//   opacity :0,
+//   scale : 1,
+//   duration :2,
+//   delay : 1,
+// })
 
 // gsap.to("#my-img2", {
 //   scrollTrigger: { 
@@ -109,42 +109,42 @@ gsap.registerPlugin(ScrollTrigger)
 
 
 // skill page gsap
-gsap.from('.skill-left',{
-  scrollTrigger  : {
-    trigger : ".skill-left",
-    scrub : true
-  },
-  opacity:0,
-  x : -150,
-  yoyo:true,
-  duration: 2,
-  stagger :0.5
-})
+// gsap.from('.skill-left',{
+//   scrollTrigger  : {
+//     trigger : ".skill-left",
+//     // scrub : true
+//   },
+//   opacity:0,
+//   x : -150,
+//   yoyo:true,
+//   duration: 2,
+//   stagger :0.5
+// })
 
-gsap.from('.skill-right',{
-  scrollTrigger  : {
-    trigger : ".skill-right",
-    scrub : true
-  },
-  opacity:0,
-  x : 150,
-  yoyo:true,
-  duration: 2,
-  stagger :0.5 
-})
+// gsap.from('.skill-right',{
+//   scrollTrigger  : {
+//     trigger : ".skill-right",
+//     // scrub : true
+//   },
+//   opacity:0,
+//   x : 150,
+//   yoyo:true,
+//   duration: 2,
+//   stagger :0.5 
+// })
 
 
-gsap.from('.other-skills',{
-  scrollTrigger : {
-    trigger : ".other-skills",
-    scrub : true,
-  },
-  opacity: 0,
-  scale:2,
-  duration : 2,
-  stagger : 0.5,
-  scrub : true
-})
+// gsap.from('.other-skills',{
+//   scrollTrigger : {
+//     trigger : ".other-skills",
+//     // scrub : true,
+//   },
+//   opacity: 0,
+//   scale:2,
+//   duration : 2,
+//   stagger : 0.5,
+//   scrub : true
+// })
 
 
 
