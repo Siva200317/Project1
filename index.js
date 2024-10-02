@@ -77,42 +77,141 @@ gsap.from(".first-section #my-img1",{
   delay : 3
 })
 
-// about page gsap
 
-var aboutTL = gsap.timeline()
 
-aboutTL.from("span .abo",{
-  scale : 1,
-  duration :1,
-  delay : 1,
+// // about page gsap
+gsap.registerPlugin(ScrollTrigger) 
+gsap.from(".role",{
   scrollTrigger : {
-    trigger : ".abo",
-
-  }
+    trigger : ".role",
+  },
+  x:100,
+  opacity :0,
+  scale : 1,
+  duration :2,
+  delay : 1,
 })
+
+// gsap.to("#my-img2", {
+//   scrollTrigger: { 
+//     trigger: "#my-img2",
+//     scrub: true,
+//     pin: true,
+//   },
+//   y: 300,
+//   x:500,
+//   rotate : 360,
+  
+// });
+
+// gsap scrollTrigger installation
+gsap.registerPlugin(ScrollTrigger) 
+
 
 // skill page gsap
-var skillTL = gsap.timeline()
-gsap.from(".skill-right",{
-  opacity : 0,
-  duration :0.8,
-  x:40,
-  stagger : 1,  
-  scrollTrigger:{
-    trigger:".skill-right",
-    scroller:"#skills",
-    markers:true,
-    start:"top 50%",
-    end:"top 20%",
-    scrub:1
+gsap.from('.skill-left',{
+  scrollTrigger  : {
+    trigger : ".skill-left",
+    scrub : true
+  },
+  opacity:0,
+  x : -150,
+  yoyo:true,
+  duration: 2,
+  stagger :0.5
+})
+
+gsap.from('.skill-right',{
+  scrollTrigger  : {
+    trigger : ".skill-right",
+    scrub : true
+  },
+  opacity:0,
+  x : 150,
+  yoyo:true,
+  duration: 2,
+  stagger :0.5 
+})
+
+
+gsap.from('.other-skills',{
+  scrollTrigger : {
+    trigger : ".other-skills",
+    scrub : true,
+  },
+  opacity: 0,
+  scale:2,
+  duration : 2,
+  stagger : 0.5,
+  scrub : true
+})
+
+
+
+let typeSplit1 = new SplitType('.article1', {
+  types: 'lines, words, chars',
+})
+const chars1 = typeSplit1.chars
+gsap.fromTo(
+  chars1,
+  {
+    "will-change": "opacity, transform",
+    opacity: 0,
+    yPercent: 50
+  },
+  {
+    duration: 1.6,
+    opacity: 1,
+    yPercent: 0,
+    ease: "elastic.out(1.2, 0.5)",
+    stagger: {
+      each: 0.02
+    }
   }
-})
+)
 
-gsap.from(".skill-left",{
-  x:-40,
-  opacity : 0,
-  duration :0.8,
-  stagger : 1,
-  scrollTrigger : ".skill-left"
+let typeSplit2 = new SplitType('.article2', {
+  types: 'lines, words, chars',
 })
-
+const chars2 = typeSplit2.chars
+gsap.fromTo(
+  chars2,
+  {
+    "will-change": "opacity, transform",
+    opacity: 0,
+    yPercent: 50
+  },
+  {
+    duration: 1.6,
+    opacity: 1,
+    yPercent: 0,
+    ease: "elastic.out(1.2, 0.5)",
+    stagger: {
+      each: 0.02
+    }
+  }
+)
+let typeSplit3 = new SplitType('.article3', {
+  types: 'lines, words, chars',
+})
+const chars3 = typeSplit3.chars
+gsap.fromTo(
+  chars3,
+  {
+    "will-change": "opacity, transform",
+    opacity: 0,
+    yPercent: 50,
+    
+  },
+  
+  {
+    duration: 1.6,
+    opacity: 1,
+    yPercent: 0,
+    ease: "elastic.out(1.2, 0.5)",
+    stagger: {
+      each: 0.02
+    },
+    
+  }
+)

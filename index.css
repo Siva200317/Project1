@@ -11,6 +11,137 @@ nav {
   width: 100%;
     
 }
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+.button-2 {
+  position: relative;
+  background: var(--glow);
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+  letter-spacing: 0.1rem;
+  font-size: 1rem;
+  padding: 0.5rem 2rem;
+  transition: 0.2s;
+}
+
+.button-2:hover {
+  letter-spacing: 0.2rem;
+  padding: 0.6rem 2.1rem;
+  background: var(--clr);
+  color: var(--clr);
+  /* box-shadow: 0 0 35px var(--clr); */
+  animation: box 3s infinite;
+}
+
+.button-2::before {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  background: var(--bg);
+}
+
+.button-2 span {
+  position: relative;
+  z-index: 1;
+}
+.button-2 i {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+
+.button-2 i::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  left: 80%;
+  top: -2px;
+  border: 2px solid var(--clr);
+  background: #272822;
+  transition: 0.2s;
+}
+
+.button-2:hover i::before {
+  width: 15px;
+  left: 20%;
+  animation: move 3s infinite;
+}
+
+.button-2 i::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  left: 20%;
+  bottom: -2px;
+  border: 2px solid var(--clr);
+  background: #272822;
+  transition: 0.2s;
+}
+
+.button-2:hover i::after {
+  width: 15px;
+  left: 80%;
+  animation: move 3s infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes box {
+  0% {
+    box-shadow: #27272c;
+  }
+  50% {
+    box-shadow: 0 0 25px var(--clr);
+  }
+  100% {
+    box-shadow: #27272c;
+  }
+}
+
+
+
+.borders{
+  border-bottom: 4px solid;
+  border-radius: 2px;
+  width: 12px;
+  margin-top: 80px;
+  position: absolute;
+  animation: nav-bor 3s infinite ease-out ;
+}
+@keyframes nav-bor {
+  0%{
+    left: 0;
+  }
+  30%{
+    width: 20px;
+  }
+  100%{
+    left: 100%;
+  }
+}
+
 section{
   display: flex !important;
   justify-content: center !important;
@@ -134,7 +265,7 @@ li a:hover{
 }
 
 /* contact us */
-#contact-input-1, #contact-input-2{
+/* #contact-input-1, #contact-input-2{
   border-radius: 10px;
   height: 45px;
   outline: none;
@@ -146,7 +277,8 @@ li a:hover{
 }
 #contact-input-1:focus,#contact-input-2:focus, #contact-input-3:focus{
   border: 1px solid #198754;
-}
+} */
+
 
 td{
   padding: 5px;
