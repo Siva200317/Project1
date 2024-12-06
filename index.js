@@ -60,6 +60,11 @@ mainTL.from(".first-section .left-content p",{
   opacity : 0,
   duration :0.8
 })
+mainTL.from(".first-section .left-content #hire",{
+  scale : 1,
+  opacity : 0,
+  duration :1
+})
 mainTL.from(".first-section .left-content button",{
   scale : 1,
   opacity : 0,
